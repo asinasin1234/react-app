@@ -1,0 +1,56 @@
+function App() {
+  const [val, setVal] = useState(0);
+
+
+
+
+  function increment() {
+    setVal(val+1)
+  }
+  function decrement() {
+   setVal(val-1)
+  }
+  return (
+    <>
+      <h1> counter: {val}</h1>
+      <button onClick={increment}>increment</button>
+      <button onClick={decrement}>decrement</button>
+    </>
+  );
+}
+
+function app() {
+  //
+  const [count, setCount] = useState(0);
+
+  let islogin = true 
+  let va = 0;
+
+  const handleClick = () => {
+    va += 1;
+    console.log("value:", va);
+  };
+
+  const counter = () => {
+    setCount(count + 1);
+    console.log("counter:", count);
+  };
+
+  const handleSubmit = () => {
+    alert("hello " + val);
+  };
+
+  return (
+    <>
+      {console.log("rendering")}
+      <form onSubmit={handleSubmit}>
+        <input type="text" onChange={(e) => setVal(e.target.value)} />
+        <button type="submit">submit</button>
+      </form>
+      <h1>Count: {va}</h1>
+      <button onClick={handleClick}>incement</button>
+      <h1>Count two: {count}</h1>
+      <button onClick={counter}>incement</button>
+    </>
+  );
+}
