@@ -1,0 +1,10 @@
+.list-cont{
+    width: 50%;
+    height: fit-content;
+    background-color: black;
+}
+.list-item{
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+}
