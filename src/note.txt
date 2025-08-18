@@ -36,6 +36,9 @@ function app() {
     console.log("counter:", count);
   };
 
+
+ const [val, setVal] = useState()
+  
   const handleSubmit = () => {
     alert("hello " + val);
   };
